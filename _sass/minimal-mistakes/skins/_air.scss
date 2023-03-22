@@ -10,8 +10,9 @@ $primary-color: #0092ca !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
 $link-color: #393e46 !default;
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
+$masthead-text-color: #fff !default; // 추가
+$masthead-link-color: $masthead-text-color !default; // 수정
+$masthead-link-color-hover: mix($masthead-text-color, $footer-background-color, 85%) !default; // 수정
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer {
@@ -20,4 +21,13 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
+}
+
+// 추가
+.masthead {
+  background-color: $footer-background-color;
+
+  nav {
+    background-color: transparent;
+  }
 }
