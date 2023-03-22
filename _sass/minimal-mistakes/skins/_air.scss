@@ -25,7 +25,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 // 추가
 .masthead {
-  background-color: $footer-background-color;
+  background-color: $footer-background-color !important;
 
   nav {
     background-color: transparent;
