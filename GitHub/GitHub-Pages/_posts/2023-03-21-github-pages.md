@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "GitHub Pages 사이트 만들기"
 date: "2023-03-21 14:10:00 +0900"
 tags: [github, github-pages]

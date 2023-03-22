@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "GitHub Pages 블로그 테마 설치"
 date: "2023-03-21 14:17:00 +0900"
 tags: [github, github-pages, ruby, jekyll, minimal-mistakes]

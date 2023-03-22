@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "GitHub Pages 블로그 포스트 올리기"
 date: "2023-03-21 19:22:00 +0900"
 # last_modified_at: "2023-03-21 19:20:00 +0900"
@@ -25,9 +24,8 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 
 ```md
 ---
-# Jekyll 테마가 지원하는 layout입니다.
-# Jekyll 설치 후 따로 테마를 설치하지 않았다면 layout으로 post를 설정하면 되나
-# 현재 사용하고 있는 minimal-mistakes 테마는 layout으로 single을 설정하면 됩니다.
+# _layouts 폴더에 있는 layout 파일 중 하나를 선택합니다.
+# 생략하면 _config.yml의 defaults의 layout으로 설정된다.
 layout: single
 
 # 글 제목입니다.
@@ -47,22 +45,35 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 ```
 
+## 카테고리 설정
+
 위의 머리말 설정 중 `categories`는 다른 방법으로 대체할 수 있는데 `_post` 폴더를 루트가 아닌 다른 폴더에 생성한 후 포스트를 올리면 `_post`에 올린 글들은 카테고리가 자동으로 설정이 됩니다.
 
 예를 들어 위의 예제의 카테고리는 `GitHub\GitHub-Pages\_post` 폴더에 포스트를 올리면 카테고리를 생략해도 자동으로 동일한 카테고리가 설정됩니다.
 
 머리말에 카테고리를 설정하는 것보다 폴더를 이용한 카테고리 설정 방법을 사용하기 바랍니다.
 
+## 마크다운 문서 작성
+
 이제 위의 예제에서 코멘트와 카테고리를 제외하면 기본적인 머리말은 다음과 같습니다. 머리말 이후 마크다운 글을 작성하면 됩니다.
+
+> __Info__  
+> 이제 블로그를 운영하기 위한 최소한의 세팅이 완료되었습니다. 첫 포스트를 작성하고 GitHub에 올려보기 바랍니다. 
+{: .notice--success}
 
 ```md
 ---
-layout: single
 title: "GitHub Pages 블로그 포스트 올리기"
 date: "2023-03-21 19:22:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 ```
+
+현재 마크다운 문법 표준화되지 못하고 여러 버전으로 나누어져 있는데 Jekyll은 `Kramdown`이라는 버전을 지원합니다. `Kramdown` 문법은 [Kramdown(마크다운)-사용법](http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/) 링크를 참고하기 바랍니다.
+
+Minimal Mistakes에서 추가적으로 `Buttons`나 `Notices` 등의 추가적으로 화면을 꾸밀 수 있는 기능을 제공합니다. [Utility Classes - Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/) 링크를 참고하기 바랍니다.
+
+포스트 예제는 [GitHub Pages 블로그 포스트 올리기](https://raw.githubusercontent.com/frontgamevb/frontgamevb.github.io/main/GitHub/GitHub-Pages/_posts/2023-03-21-github-pages-blog-posts.md) 링크를 클릭하면 이 글의 마크다운 포스트 문서를 확인할 수 있습니다.
 
 ## 참고
 
