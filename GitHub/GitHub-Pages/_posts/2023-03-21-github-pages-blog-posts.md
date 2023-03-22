@@ -1,7 +1,7 @@
 ---
 title: "GitHub Pages 블로그 포스트 올리기"
 date: "2023-03-21 19:22:00 +0900"
-# last_modified_at: "2023-03-21 19:20:00 +0900"
+last_modified_at: "2023-03-22 13:27:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 이전 글에서 기본적인 설정이 마무리된 만큼 포스트를 작성하고 올리는 방법을 설명하겠습니다.
@@ -25,13 +25,13 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 ```md
 ---
 # _layouts 폴더에 있는 layout 파일 중 하나를 선택합니다.
-# 생략하면 _config.yml의 defaults의 layout으로 설정된다.
+# 생략하면 _config.yml의 defaults의 layout으로 설정됩니다.
 layout: single
 
 # 글 제목입니다.
 title: "GitHub Pages 블로그 포스트 올리기"
 
-# 글 작성일입니다.
+# 글 작성일입니다. +0900은 대한민국 시간대입니다.
 date: "2023-03-21 19:22:00 +0900"
 
 # 글의 마지막 수정일입니다.
