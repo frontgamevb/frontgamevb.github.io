@@ -1,7 +1,7 @@
 ---
 title: "GitHub Pages 블로그 기본 설정"
 date: "2023-03-21 14:21:00 +0900"
-last_modified_at: "2023-03-21 19:20:00 +0900"
+last_modified_at: "2023-03-22 12:16:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 ![Github Pages jekyll 테마 설치](/assets/images/github-pages-theme-installed.png)
@@ -17,6 +17,9 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 ## Site Settings
 
 ```yml
+# 코멘트를 제거하면 GitHub에서 Build에 실패하니 코멘트를 제거하지 않습니다.
+# theme                  : "minimal-mistakes-jekyll"
+
 # 테마가 사용하는 색상을 선택합니다. 아래의 주소에서 미리보기로 확인할 수 있습니다.
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
