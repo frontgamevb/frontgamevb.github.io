@@ -1,7 +1,7 @@
 ---
 title: "GitHub Pages 블로그 꾸미기"
 date: "2023-03-22 15:09:00 +0900"
-# last_modified_at: "2023-03-22 12:16:00 +0900"
+last_modified_at: "2023-03-22 19:38:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 ## 최근 포스트 화면
@@ -78,7 +78,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 // 추가
 .masthead {
-  background-color: $footer-background-color;
+  background-color: $footer-background-color !important;
 
   nav {
     background-color: transparent;
