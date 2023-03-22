@@ -1,10 +1,9 @@
 ---
 title: "GitHub Pages 블로그 포스트 올리기"
 date: "2023-03-21 19:22:00 +0900"
-last_modified_at: "2023-03-22 13:27:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
-이전 글에서 기본적인 설정이 마무리된 만큼 포스트를 작성하고 올리는 방법을 설명하겠습니다.
+GitHub Pages에 포스트를 작성하고 올립니다.
 
 ## 파일명
 
@@ -20,12 +19,13 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 ```
 여기서 주의할 점은 월 또는 일이 한 자리일 경우에도 앞에 0을 붙여 두 자리로 만들어야 합니다.
 
-## 머리말 (front-matter)
+## 머리말 (Front Matter)
+
+포스트는 항상 머리말로 시작해야 합니다. 머리말에 생략된 설정은 `_config.yml` 파일의 `defaults` 설정을 따릅니다.
 
 ```md
 ---
 # _layouts 폴더에 있는 layout 파일 중 하나를 선택합니다.
-# 생략하면 _config.yml의 defaults의 layout으로 설정됩니다.
 layout: single
 
 # 글 제목입니다.

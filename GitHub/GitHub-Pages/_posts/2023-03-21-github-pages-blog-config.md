@@ -1,9 +1,10 @@
 ---
 title: "GitHub Pages 블로그 기본 설정"
 date: "2023-03-21 14:21:00 +0900"
-last_modified_at: "2023-03-22 12:16:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
+GitHub Pages 블로그를 설정합니다.
+
 ![Github Pages jekyll 테마 설치](/assets/images/github-pages-theme-installed.png)
 
 위의 테마가 설치된 화면을 다시 보면 `Site Title`, `Your Name` 등 많은 수정해야 할 부분들이 보입니다.
@@ -45,14 +46,20 @@ url                      : "https://frontgamevb.github.io"
 # 블로그의 시작 주소를 서브 폴더로 설정할 수 있습니다.
 baseurl                  : # the subpath of your site, e.g. "/blog"
 
-# GitHub의 repository를 설정합니다. GitHub Pages가 아니더라도 연결하고 싶은 repository를 설정하면 됩니다.
+# GitHub의 repository를 설정합니다.
+# GitHub Pages가 아니더라도 연결하고 싶은 repository를 설정하면 됩니다.
 repository               : "frontgamevb/frontgamevb.github.io"
 
 # 사이트 제목 앞에 보여줄 로고입니다.
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 
-# Site Title 위치에 사이트의 제목인 title의 내용이 아닌 다른 내용이 출력되기를 원할 때 설정합니다.
+# Site Title 위치에 사이트의 제목인 title의 내용이 아닌 다른 내용이
+# 출력되기를 원할 때 설정합니다.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
+# 일자 출력 포맷을 2023-03-22 형식으로 변경합니다.
+# date_format이 없을 경우 아무 위치에나 추가해도 됩니다.
+date_format: "%Y-%m-%d"
 ```
 
 ## Site Author
@@ -72,7 +79,8 @@ author:
   # 살고 있는 위치입니다.
   location         : # "대한민국"
 
-  # Email이나 본인의 계정이 있는 사이트들의 링크입니다. icon은 아래 주소에서 검색해서 설정합니다.
+  # Email이나 본인의 계정이 있는 사이트들의 링크입니다.
+  # icon은 아래 주소에서 검색해서 설정합니다.
   # https://fontawesome.com/icons
   links:
     - label: "Email"
@@ -93,6 +101,27 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+```
+
+## 머리말(Front Matter) 기본값
+
+블로그에 올리는 모든 포스트에는 머리말이 포함이 되어 있어야 합니다. `values`에 설정된 값들은 포스트의 머리말에서 생략이 가능합니다.
+
+```yml
+# Defaults
+defaults:
+    values:
+      # 포스트를 읽는데 걸리는 시간을 표시합니다. 도움이 되지 않는 정보입니다.
+      read_time: # true
+
+      # 글의 바로 빝에 일자를 표시합니다.
+      show_date: true
+
+      # 포스트의 오른쪽 사이드에 목차를 보여줍니다. 없으면 추가하기 바랍니다.
+      toc: true
+
+      # 포스트의 오른쪽 사이드에 목차를 스크롤에 영향받지 않고 화면에 고정시킵니다.
+      toc_sticky: true
 ```
 
 ## 설정 결과 확인

@@ -3,6 +3,8 @@ title: "GitHub Pages 사이트 만들기"
 date: "2023-03-21 14:10:00 +0900"
 tags: [github, github-pages]
 ---
+GitHub에서 웹 호스팅 서비스를 받을 수 있는 GitHub Pages 사이트를 만듭니다.
+
 ## About GitHub Pages
 
 GitHub에서 제공하는 정적 사이트 호스팅 서비스로 데이터베이스나 서버를 다룰 수 없기 때문에 간단한 웹사이트 제작에 알맞습니다.

@@ -1,9 +1,10 @@
 ---
 title: "GitHub Pages 블로그 꾸미기"
 date: "2023-03-22 15:09:00 +0900"
-last_modified_at: "2023-03-22 19:38:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
+GitHub Pages 블로그를 꾸밉니다.
+
 ## 최근 포스트 화면
 
 ![GitHub Pages 최근 포스트](/assets/images/github-pages-recent-posts.png)
@@ -88,24 +89,6 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 코드 중 코멘트로 추가 또는 수정이라고 표시 되어있는 줄만 자신의 스킨에 추가, 수정하면 됩니다.
 
 여기서 주의할 점은 `$masthead-text-color`의 색상은 아래 `.page__footer`의 `color`와 동일하게 설정해야 한다는 것입니다.
-
-### `x분 소요` 삭제
-
-포스트 밑에 `X분 소요`라고 해당 포스트 별로 글을 읽는데 걸리는 시간을 대략적으로 보여주는데 이게 유용한 경우는 거의 없기 때문에 삭제합니다.
-
-`_config.yml` 파일 맨 아래에 있는 `read_time`의 값을 코멘트 처리하면 됩니다.
-
-```yml
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: # true
-```
 
 ## 최근 포스트 수정 화면
 

@@ -3,6 +3,8 @@ title: "GitHub Pages 블로그 테마 설치"
 date: "2023-03-21 14:17:00 +0900"
 tags: [github, github-pages, ruby, jekyll, minimal-mistakes]
 ---
+GitHub Pages 사이트에서 블로그를 운영할 수 있게 해주는 블로그 테마를 설치합니다.
+
 ## Ruby & Jekyll 설치하기
 
 GitHub Pages에 Jekyll이 내장되어 있지만 알다시피 GitHub에서 직접 코드를 작성하는 일은 불편하고 비효율적이기 때문에 하지 않습니다.
