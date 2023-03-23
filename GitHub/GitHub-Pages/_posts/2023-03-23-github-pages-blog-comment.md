@@ -17,15 +17,17 @@ GitHub Pages 블로그에 댓글을 달 수 있는 기능을 추가합니다.
 - 블로그의 테마에 어울리게 댓글의 색상이나 디자인을 조정할 수 있어야 합니다.
 - 제공자가 사라질 확률이 없어야 합니다.
 
-위의 모든 조건을 만족하는 댓글 기능을 제공하는 공급자는 GitHub에서 지원하는 utterances입니다.
+위의 모든 조건을 만족하는 댓글 기능을 제공하는 공급자는 GitHub에서 지원하는 utterances로 몇 가지 특징이 있습니다.
+
+- 댓글은 GitHub의 Public repository의 Issues에 기록됩니다.
+- GitHub 계정에 로그인해야 댓글을 남길 수 있습니다.
+- 마크다운으로 댓글을 달 수 있습니다.
 
 ## utterances 댓글 Repository 생성
 
 utterances는 댓글을 GitHub의 지정한 Repository에 저장합니다.
 
-GitHug Pages는 경우에 따라 Private으로 전환할 수도 있기 때문에 댓글 전용 Repository를 적당한 이름(BlogComment 등에 Public으로 만듭니다.
-
-
+GitHug Pages는 경우에 따라 Private으로 전환할 수도 있기 때문에 댓글 전용 Repository를 적당한 이름(BlogComment 등)에 Public으로 만듭니다.
 
 ## utterances 설치
 
@@ -42,4 +44,11 @@ comments:
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
+
+defaults:
+  - scope:
+    values:
+      comments: true
 ```
+
+이제 모든 내용을 GitHub에 올리고 배포가 완료되기를 기다리면 댓글을 입력할 수 있습니다.
