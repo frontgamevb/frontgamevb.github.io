@@ -36,3 +36,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 a {
   text-decoration: none;
 }
+
+// 추가
+.archive-oneline {
+  line-height: 1.8em;
+}

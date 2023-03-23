@@ -11,7 +11,7 @@ main:
 
 sidebar-category:
   - title: GitHub
-    url: /categories/#github
+    url: /categories/github
     children:
       - title: GitHug-Pages
-        url: /categories/#github-pages
+        url: /categories/github-pages

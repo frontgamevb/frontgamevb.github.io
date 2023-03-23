@@ -16,6 +16,8 @@ title: "태그 목록"
 permalink: /tags/
 layout: tags
 author_profile: true
+sidebar:
+  nav: sidebar-category
 ---
 ```
 - 이제 포스트의 태그를 클릭하면 아래 화면처럼 해당 태그가 포함된 포스트들을 보여줍니다.
@@ -48,6 +50,8 @@ title: "카테고리 목록"
 layout: categories
 permalink: /categories/
 author_profile: true
+sidebar:
+  nav: sidebar-category
 ---
 ```
 - 이제 포스트의 카테고리를 클릭하면 해당 카테고리가 포함된 포스트들을 보여줍니다.
@@ -91,7 +95,6 @@ sidebar-category:
 layout: home
 author_profile: true
 sidebar:
-  # title: "카테고리"
   nav: sidebar-category
 ---
 ```
