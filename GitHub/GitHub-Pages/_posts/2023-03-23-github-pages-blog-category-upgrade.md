@@ -3,7 +3,7 @@ title: "GitHub Pages 블로그 카테고리 업그레이드"
 date: "2023-03-23 18:00:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
-GitHub Pages 블로그의 카테고리 기능을 사용하기 업그레이드 합니다.
+GitHub Pages 블로그의 카테고리 기능을 업그레이드 합니다.
 
 ## 선택한 카테고리의 포스트만 출력
 
