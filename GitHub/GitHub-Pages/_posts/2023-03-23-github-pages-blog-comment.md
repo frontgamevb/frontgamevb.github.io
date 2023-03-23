@@ -25,13 +25,15 @@ utterances는 댓글을 GitHub의 지정한 Repository에 저장합니다.
 
 GitHug Pages는 경우에 따라 Private으로 전환할 수도 있기 때문에 댓글 전용 Repository를 적당한 이름(BlogComment 등에 Public으로 만듭니다.
 
+
+
 ## utterances 설치
 
 - [GitHub Apps - utterances](https://github.com/apps/utterances) 링크를 클릭 한 후 `Install`을 클릭합니다.
 - utternaces를 모든 Repository에 설치할 Repository를 다음과 같이 선택하고 `Install`을 클릭합니다.
 
 ![GitHub Pages utterances 설치](/assets/images/github-pages-blog-install-utternaces.png)
-- 다음에 설정을 하는 화면이 나오는데 Minimal Mistakes 테마를 사용할 경우 `_config.yml` 파일에서 설정한다.
+- 다음에 설정을 하는 화면이 나오는데 Minimal Mistakes 테마를 사용할 경우 `_config.yml` 파일에서 설정합니다.
 
 ```yml
 repository               : "frontgamevb/BlogComments"
@@ -39,4 +41,5 @@ comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
 ```
