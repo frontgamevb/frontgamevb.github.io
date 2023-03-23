@@ -296,5 +296,9 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
+      toc_label: "목차"
+      sidebar:
+        # title: "카테고리"
+        nav: sidebar-category
 
 date_format: "%Y-%m-%d"

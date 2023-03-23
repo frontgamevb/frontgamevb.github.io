@@ -5,13 +5,13 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
 GitHub Pages 블로그를 설정합니다.
 
-![Github Pages jekyll 테마 설치](/assets/images/github-pages-theme-installed.png)
+아래의 테마가 설치된 화면을 다시 보면 `Site Title`, `Your Name` 등 많은 수정해야 할 부분들이 보입니다.
 
-위의 테마가 설치된 화면을 다시 보면 `Site Title`, `Your Name` 등 많은 수정해야 할 부분들이 보입니다.
+![Github Pages jekyll 테마 설치](/assets/images/github-pages-theme-installed.png)
 
 `_config.yml` 파일의 수정을 통해 사이트의 많은 부분을 설정할 수 있습니다. 설정의 중요한 항목들을 설명하겠습니다. 설명한 내용을 보고 `_config.yml` 파일을 수정하기를 바랍니다.
 
-> __Info__  
+> __Info:__
 > Jekyll 서버에서 대부분의 파일의 수정이나 추가는 서버의 재시작 없이 실시간으로 반영이 되지만 `config.yml` 파일의 수정은 반드시 서버를 재시작해야 반영됩니다.
 {: .notice--info}
 
@@ -57,8 +57,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 # 출력되기를 원할 때 설정합니다.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 
-# 일자 출력 포맷을 2023-03-22 형식으로 변경합니다.
-# date_format이 없을 경우 아무 위치에나 추가해도 됩니다.
+# 일자 출력 포맷을 2023-03-22 형식으로 변경합니다. 없으면 추가합니다.
 date_format: "%Y-%m-%d"
 ```
 
@@ -110,6 +109,7 @@ author:
 ```yml
 # Defaults
 defaults:
+  - scope:
     values:
       # 포스트를 읽는데 걸리는 시간을 표시합니다. 도움이 되지 않는 정보입니다.
       read_time: # true
@@ -117,11 +117,14 @@ defaults:
       # 글의 바로 빝에 일자를 표시합니다.
       show_date: true
 
-      # 포스트의 오른쪽 사이드에 목차를 보여줍니다. 없으면 추가하기 바랍니다.
+      # 포스트의 오른쪽 사이드에 목차를 보여줍니다. 없으면 추가합니다.
       toc: true
 
       # 포스트의 오른쪽 사이드에 목차를 스크롤에 영향받지 않고 화면에 고정시킵니다.
       toc_sticky: true
+
+      # 목차의 제목을 설정합니다.
+      toc_label: "목차"
 ```
 
 ## 설정 결과 확인

@@ -31,3 +31,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     background-color: transparent;
   }
 }
+
+// 추가
+a {
+  text-decoration: none;
+}

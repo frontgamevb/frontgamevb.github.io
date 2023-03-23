@@ -1,17 +1,15 @@
 ---
-title: "GitHub Pages 블로그 꾸미기"
+title: "GitHub Pages 블로그 시작 화면 수정"
 date: "2023-03-22 15:09:00 +0900"
 tags: [github, github-pages, jekyll, minimal-mistakes]
 ---
-GitHub Pages 블로그를 꾸밉니다.
+GitHub Pages 블로그의 시작 화면을 수정합니다.
 
-## 최근 포스트 화면
+## 시작 화면
 
-![GitHub Pages 최근 포스트](/assets/images/github-pages-recent-posts.png)
+포스트를 몇 개 올린 후 홈페이지를 확인하면 아래와 같은 결과를 확인할 수 있습니다. 이 화면을 더 효율적으로 꾸며 보겠습니다.
 
-포스트를 몇 개 올린 후 홈페이지를 확인하면 위와 같은 결과를 확인할 수 있습니다.
-
-위의 화면을 더 효율적으로 꾸며보겠습니다.
+![GitHub Pages 시작 화면](/assets/images/github-pages-recent-posts.png)
 
 ### `Quick-Start Guide` 삭제
 
@@ -49,7 +47,10 @@ Footer를 제거하기 위해서는 `_layouts` 폴더의 `default.html` 파일�
     </div>
     -->
 ```
-주의할 점은 Liquid 템플릿 언어의 시작을 나타내는 기호는 코멘트 내에 포함되어 있어도 번역이 되기 때문에 위와 같이 `{ %`, `% }` 식으로 사이에 공백을 넣어 Liquid 템플릿 언어로 인식되지 않게 해야 합니다.
+
+> __Warning:__
+> Liquid 템플릿 언어의 시작을 나타내는 기호는 코멘트 내에 포함되어 있어도 번역이 되기 때문에 위와 같이 `{ %`, `% }` 식으로 사이에 공백을 넣어 Liquid 템플릿 언어로 인식되지 않게 해야 합니다.
+{: .notice--warning}
 
 ### 타이틀바 색 Footer 색으로 변경
 
@@ -88,10 +89,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 ```
 코드 중 코멘트로 추가 또는 수정이라고 표시 되어있는 줄만 자신의 스킨에 추가, 수정하면 됩니다.
 
-여기서 주의할 점은 `$masthead-text-color`의 색상은 아래 `.page__footer`의 `color`와 동일하게 설정해야 한다는 것입니다.
-
 ## 최근 포스트 수정 화면
 
-![GitHub Pages 최근 포스트 수정](/assets/images/github-pages-blog-home-edited.png)
+이제 최근 포스트 화면이 아래처럼 더 깔끔해 졌습니다.
 
-이제 최근 포스트 화면이 더 깔끔해 졌습니다.
+![GitHub Pages 최근 포스트 수정](/assets/images/github-pages-blog-home-edited.png)

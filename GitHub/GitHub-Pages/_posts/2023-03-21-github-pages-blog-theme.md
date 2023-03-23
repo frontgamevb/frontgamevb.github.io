@@ -59,7 +59,7 @@ end
 bundle
 bundle exec jekyll serve
 ```
-> __Info__  
+> __Info:__
 > `bundle exec jekyll serve` 명령은 Jekyll 서버를 실행하는 명령입니다.
 {: .notice--info}
 
