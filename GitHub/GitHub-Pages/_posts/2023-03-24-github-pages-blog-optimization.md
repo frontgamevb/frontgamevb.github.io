@@ -1,7 +1,7 @@
 ---
 title: "GitHub Pages 블로그 최적화"
 date: "2023-03-24 13:10:00 +0900"
-tags: [github, github-pages, jekyll, hugo]
+tags: [github, github-pages, jekyll]
 ---
 GitHub Pages 블로그의 성능을 높이는 방법에 대해 설명합니다.
 
