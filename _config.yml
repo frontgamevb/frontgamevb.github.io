@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "FrontGame"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Apple II에서 윈도우까지 다양한 플랫폼에서 개발을 합니다."
+  bio              : "Apple II에서 윈도우까지"
   location         : # "대한민국"
   email            :
   links:

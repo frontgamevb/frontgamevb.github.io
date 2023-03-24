@@ -76,7 +76,7 @@ tags: [github, github-pages, jekyll, minimal-mistakes]
 > Minimal Mistakes에서 추가적으로 `Buttons`나 `Notices` 등의 추가적으로 화면을 꾸밀 수 있는 기능을 제공합니다. [Utility Classes - Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/) 링크를 참고하기 바랍니다.
 {: .notice--success}
 
-포스트 예제는 [GitHub Pages 블로그 포스트 올리기](https://raw.githubusercontent.com/frontgamevb/frontgamevb.github.io/main/GitHub/GitHub-Pages/_posts/2023-03-21-github-pages-blog-posts.md) 링크를 클릭하면 이 글의 마크다운 포스트 문서를 확인할 수 있습니다.
+포스트 예제는 [GitHub Pages 블로그 포스트 올리기](https://gist.githubusercontent.com/frontgamevb/1e7363d9f9593348daa48fb49faddac1/raw/8c4cc2bc9009c5c3f9a3594705252a1bc1baa253/2023-03-21-github-pages-blog-posts.md) 링크를 클릭하면 이 글의 마크다운 포스트 문서를 확인할 수 있습니다.
 
 ## 참고
 

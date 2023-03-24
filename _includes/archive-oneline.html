@@ -1,23 +1,10 @@
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="archive-oneline">
-      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
       <span class="page__meta">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       </span>
     </div>
   </article>

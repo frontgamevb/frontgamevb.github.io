@@ -60,7 +60,7 @@ sidebar:
 
 카테고리에 쉽게 접근할 수 있게 사이드바에 카테고리를 추가하겠습니다.
 
-`config.yml`의 `defaults` 설정에 다음과 같이 사이드바에 네비게이션을 추가합니다.
+`config.yml` 파일의 `defaults` 설정에 다음과 같이 사이드바에 네비게이션을 추가합니다.
 
 ```yml
 # Defaults

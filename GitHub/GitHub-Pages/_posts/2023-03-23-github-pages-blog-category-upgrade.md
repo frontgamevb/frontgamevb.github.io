@@ -35,26 +35,13 @@ sidebar:
 - `_includes` 폴더에 `archive-oneline.html` 파일을 만들고 아래의 코드를 추가합니다.
 
 ```html
-{% raw %}{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
-<div class="{{ include.type | default: 'list' }}__item">
+{% raw %}<div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="archive-oneline">
-      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
       <span class="page__meta">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       </span>
     </div>
   </article>
@@ -84,15 +71,21 @@ sidebar-category:
         url: /categories/github-pages
 ```
 
-포스트의 카테고리 링크의 `#`도 제거해야 합니다. `_includes/category-list.html` 파일의 `#`을 `nil`로 수정하거나 `assign path_type = nil`만 남겨두고 전부 삭제합니다.
+포스트의 카테고리 링크의 `#`도 제거해야 합니다. `_includes/category-list.html` 파일의 코드를 다음 코드로 변경합니다.
 
-```liquid
-{% raw %}{% case site.category_archive.type %}
-  {% when "liquid" %}
-    {% assign path_type = nil %} <!-- path_type = "#" -->
-  {% when "jekyll-archives" %}
-    {% assign path_type = nil %}
-{% endcase %}{% endraw %}
+```html
+{% raw %}{% if site.category_archive.path %}
+  {% assign categories_sorted = page.categories | sort_natural %}
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <span itemprop="keywords">
+    {% for category_word in categories_sorted %}
+      <a href="{{ category_word | slugify | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% endfor %}
+    </span>
+  </p>
+{% endif %}{% endraw %}
 ```
 
 ## 수정된 카테고리 화면
